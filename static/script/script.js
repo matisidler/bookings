@@ -16,40 +16,7 @@ let attention = Prompt();
         form.classList.add('was-validated')
       }, false)
     })
-
-console.log("this")
-    const elem = document.getElementById('foo');
-const rangepicker = new DateRangePicker(elem, {
-    buttonClass: 'btn',
-    format: "dd-mm-yyyy"
-}); 
-
-
-
 /* NOTIE */
-
-let av_btn = document.getElementById('search_av_btn')
-
-av_btn.addEventListener('click',(e)=>{
-    e.preventDefault()
-    let htmlQuote = `
-    <form id="check-availability-form action="" method="post" novalidate class="needs-validation search-form">
-        <div class="row">
-            <div class="col">
-                <div class= "row" id="reservation-dates-modal"> 
-                    <div class="col">
-                        <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
-                    </div>
-                    <div class="col">
-                        <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Departure">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>`
-    attention.custom({msg: htmlQuote, title: "Choose your dates"})
-})
-
 function notify(msg, msgType){
     notie.alert({
         type: msgType,
