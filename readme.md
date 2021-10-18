@@ -1,6 +1,10 @@
 # Acerca de lambda generateOcuPaymentPay
 
+<<<<<<< HEAD
 Para la refactorización que se quiere realizar a la Billetera web, se requiere que el Endpoint PaymentPay genere ordenes de compra única, a través de la Lambda ApiOcPost. Uno de los comercios identificados que está utilizando este endpoint actualmente, es Softnyx.
+=======
+Creating a booking app using Golang.
+>>>>>>> 8ce2548dad73adc33cf8aebbd26bae018680a850
 
 Por lo cual, esta Lambda se encarga de generar las ordenes de compra única (OCU) para este comercio y cualquier otro que esté utilizando este endpoint, invocando a la lambda apiOcPost. En términos generales, esta Lambda recibe los datos generados por el comercio, la transforma y crea una petición válida para generar una orden de compra única.
 
