@@ -8,19 +8,17 @@
             <h1 class="mt-5">Search for Availibility</h1>
 
             <!-- FORM -->
-            <form action="" method="get" novalidate class="needs-validation">
-
-
+            <form action="/search-availability" method="post" novalidate class="needs-validation">
+                <input type="text" name="csrf_token" value="{{.CSRFToken}}" hidden>
                 <div class="row">
                     <div class="col">
                         <div class="row" id="foo">
                             <div class="col">
-                                <input type="text" name="start" class="form-control" required
-                                    placeholder="Arrival date">
+                                <input type="text" name="start" class="form-control" required placeholder="Arrival date" autocomplete="off">
                             </div>
 
                             <div class="col">
-                                <input type="text" name="end" class="form-control" required placeholder="Departure">
+                                <input type="text" name="end" class="form-control" required placeholder="Departure" autocomplete="off">
                             </div>
                         </div>
                     </div>
