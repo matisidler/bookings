@@ -24,6 +24,9 @@ func routes(app *config.AppConfig) http.Handler {
 	mux.Get("/search-availability", handlers.Repo.Availability)
 	mux.Get("/contact", handlers.Repo.Contact)
 
+	mux.Post("/search-availability", handlers.Repo.PostAvailability)
+	mux.Post("/search-availability-json", handlers.Repo.AvailabilityJSON)
+
 	//le decimso que sirva todo el contenido estático que hay en la carpeta static
 	fileServer := http.FileServer(http.Dir("../../static"))
 	//le decimos que utilice todo lo que haya en static
